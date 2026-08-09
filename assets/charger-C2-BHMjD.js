@@ -1,0 +1,1 @@
+var e=(e,t,n)=>{let r=Object.keys(n.chargers[e]?.connectors||{}).length===1,i=n.chargers[e]?.name;if(!i)return`Unknown Charger`;if(!r){let r=n.chargers[e].connectors[t].name;i+=` - (${r})`}return i};export{e as t};
