@@ -1,0 +1,1 @@
+import{U as e,k as t}from"./index-DL3aLPCx.js";var n={__name:`HomeView`,setup(n){let r=t();return e(()=>{localStorage.getItem(`isLoggedIn`)===`true`?r.push(`/reservation`):r.push(`/login`)}),(e,t)=>null}};export{n as default};
