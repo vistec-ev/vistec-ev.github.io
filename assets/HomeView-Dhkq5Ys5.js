@@ -1,1 +1,0 @@
-import{U as e,k as t}from"./index-DOv8Yqz-.js";var n={__name:`HomeView`,setup(n){let r=t(),i=localStorage.getItem(`userData`);return i&&=JSON.parse(i),console.log(`userData`,i),e(()=>{i&&i.uid?r.push(`/reservation`):r.push(`/login`)}),(e,t)=>null}};export{n as default};
