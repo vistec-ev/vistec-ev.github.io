@@ -11,6 +11,21 @@
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Redirect Script to handle Github 404-->
+    <script>
+    (function() {
+      // Check if a redirect URL was saved in sessionStorage
+      const redirect = sessionStorage.getItem('spa-redirect');
+      if (redirect) {
+        // Clear it so it doesn't trigger on subsequent reloads
+        sessionStorage.removeItem('spa-redirect');
+        
+        // Silently update the URL bar to the original requested path
+        window.history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
     
     <script type="module" crossorigin src="/assets/index-DwRh5I9Q.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CA7DXpiU.css">
