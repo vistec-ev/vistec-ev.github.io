@@ -1,0 +1,1 @@
+import{A as e,W as t}from"./index-UM_nTSZK.js";var n={__name:`HomeView`,setup(n){let r=e(),i=localStorage.getItem(`userData`);return i&&=JSON.parse(i),console.log(`userData`,i),t(()=>{i&&i.uid?r.push(`/charge`):r.push(`/login`)}),(e,t)=>null}};export{n as default};
